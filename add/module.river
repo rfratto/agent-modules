@@ -1,0 +1,14 @@
+// a is the first number to add.
+argument "a" {
+	optional = false
+}
+
+// b is the second number to add.
+argument "b" {
+	optional = false
+}
+
+// sum computes the sum of the two arguments.
+export "sum" {
+	value = argument.a.value + argument.b.value
+}
