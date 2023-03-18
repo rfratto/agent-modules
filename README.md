@@ -25,4 +25,7 @@ prometheus.remote_write "default" {
 }
 ```
 
+To use `module.git`, see
+[grafana/agent#3302](https://github.com/grafana/agent/pull/3302).
+
 [modules]: https://grafana.com/docs/agent/next/flow/concepts/modules/
