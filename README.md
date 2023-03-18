@@ -1,8 +1,11 @@
-# rfratto's Grafana Agent modules
+# rfratto's Grafana Agent Flow modules
 
-This repository contains a set of [modules][] for Grafana Agent. Each directory
-is a different Grafana Agent module with a file called `module.river` and a
-`README.md` for documentation on how to use the module.
+This repository contains a set of [modules][] for Grafana Agent Flow. Each
+directory is a different Grafana Agent Flow module with a file called
+`module.river` and a `README.md` for documentation on how to use the module.
+
+Modules are an upcoming feature in Grafana Agent Flow scheduled for the v0.33
+release.
 
 ## Recommended module loader
 
