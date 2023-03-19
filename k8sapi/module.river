@@ -106,6 +106,9 @@ prometheus.scrape "kubernetes" {
 
 	bearer_token_file = "/var/run/secrets/kubernetes.io/serviceaccount/token"
 
+	scrape_interval = argument.scrape_interval.value
+	scrape_timeout  = argument.scrape_timeout.value
+
 	tls_config {
 		ca_file = "/var/run/secrets/kubernetes.io/serviceaccount/ca.crt"
 	}
