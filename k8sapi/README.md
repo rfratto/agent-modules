@@ -30,7 +30,6 @@ loader:
 | `forward_metrics_to` | `list(MetricsReceiver)` | Receivers to forward collected metrics to. | | yes
 | `scrape_interval` | `duration` | How often to collect metrics. | `"60s"` | no
 | `scrape_timeout` | `duration` | Timeout period for collecting metrics. | `"10s"` | no
-| `kubeconfig_file` | `string` | Path to the Kubernetes config file. | `""` | no
 
 `k8sapi` uses in-cluster authentication for connecting to Kubernetes, and
 expects to be running inside the Kubernetes cluster.
