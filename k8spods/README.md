@@ -71,10 +71,10 @@ to a [`prometheus.remote_write` component][prometheus.remote_write] and forward
 logs to a [`loki.write` component][loki.write]:
 
 ```river
-module.git "k8slogs" {
+module.git "k8spods" {
   repository = "https://github.com/rfratto/agent-modules.git"
   revision   = "main"
-  path       = "k8slogs/module.river"
+  path       = "k8spods/module.river"
 
   arguments {
     forward_metrics_to = [prometheus.remote_write.default.receiver]
