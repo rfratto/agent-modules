@@ -123,10 +123,10 @@ discovery.relabel "metrics_pods" {
 
 prometheus.scrape "metrics_pods" {
 	targets    = discovery.relabel.metrics_pods.output
-	forawrd_to = argument.forward_metrics_to.value
+	forward_to = argument.forward_metrics_to.value
 }
 
 loki.source.kubernetes "pods" {
 	targets    = discovery.relabel.pods.output
-	forawrd_to = argument.forward_logs_to.value
+	forward_to = argument.forward_logs_to.value
 }
