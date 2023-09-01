@@ -56,6 +56,8 @@ All telemetry data will have the following labels:
 * `namespace`: set to `POD_NAMESPACE`.
 * `pod`: set to `POD_NAME`.
 * `container`: set to `POD_CONTAINER_NAME`.
+* `app`: set to the value of the `app` label if present.
+* `name`: set to the value of the `app.kubernetes.io/name` label if present.
 
 Additionally, when collecting metrics, the `instance` label is set to
 `POD_NAME:POD_CONTAINER_NAME:POD_CONTAINER_PORT_NAME`.
