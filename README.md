@@ -15,8 +15,8 @@ module.git "k8s_api" {
   revision   = "main"
   path       = "k8s_api/module.river"
 
-  arguments = {
-    forward_metrics_to = [prometheus.remote_write.default.receiver],
+  arguments {
+    forward_metrics_to = [prometheus.remote_write.default.receiver]
   }
 }
 
