@@ -49,7 +49,7 @@ All telemetry data will have the following labels:
   * A label named `k8s-app`.
   * A label named `app`.
   * A label named `name`.
-  * A combination of the `kubernetes.io/instance` and `kubernetes.io/naem`
+  * A combination of the `kubernetes.io/instance` and `kubernetes.io/name`
     labels, concatenated with a hyphen.
   * The pod controller name.
   * The pod name.
